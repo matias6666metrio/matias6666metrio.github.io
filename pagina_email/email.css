@@ -1,0 +1,208 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-bar {
+    background-color: #016339;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.top-bar-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-left button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.top-bar-right {
+    font-size: 14px;
+    
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    width: 200px;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.sidebar-item.active {
+    font-weight: bold;
+}
+
+.calendar-container {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+.calendar div {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.calendar .header {
+    font-weight: bold;
+    background-color: #0078d7;
+    color: white;
+}
+
+.calendar .day {
+    background-color: #fff;
+}
+
+.calendar .today {
+    background-color: #0078d7;
+    color: white;
+}
+
+.email-list-container {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: grid; 
+    grid-template-columns: 1fr auto; 
+    
+}
+
+.email-list-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #666;
+    padding-right: 20px; 
+    box-sizing: border-box;
+}
+
+.header-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-empty {
+    width: 20px; 
+}
+
+.email-item {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    font-size: 14px;
+    padding-right: 20px; 
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.email-item-left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0; 
+    overflow: hidden; 
+}
+
+.email-item-sender {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 2px; 
+}
+
+.email-item-subject {
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.email-item-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.email-item-date {
+    font-size: 12px;
+    color: #777;
+}
+
+.email-item-empty {
+    width: 20px; 
+}
+
+.bottom-bar {
+    background-color: #eee;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-bar-left {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-bar-right span {
+    margin-left: 10px;
+}
